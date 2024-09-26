@@ -49,7 +49,7 @@ lista.imprimir(); */
 
 //Metodo 2
 
-/* class Nodo {
+ class Nodo {
     constructor(dato) {
         this.dato = dato;
         this.siguiente = null;
@@ -90,7 +90,7 @@ lista.insertarSinDuplicados(10);
 lista.insertarSinDuplicados(20);
 lista.insertarSinDuplicados(10); // No se inserta porque ya existe
 lista.imprimir(); // Imprime: 10, 20
- */
+ 
 
 
 
