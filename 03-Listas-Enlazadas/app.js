@@ -70,12 +70,11 @@ class ListaEnlazada {
         let actual = this.cabeza;
 
         while (actual.siguiente) {
-            if (actual.dato === dato) return; // Si el dato ya existe, no insertamos
+            if (actual.dato === dato) return;
             actual = actual.siguiente;
         }
 
-        if (actual.dato !== dato) actual.siguiente = new Nodo(dato); // Verificamos el último nodo
-    }
+        if (actual.dato !== dato) actual.siguiente = new Nodo(dato);
 
     imprimir() {
         for (let actual = this.cabeza; actual; actual = actual.siguiente) {
@@ -84,12 +83,12 @@ class ListaEnlazada {
     }
 }
 
-// Ejemplo de uso:
+
 let lista = new ListaEnlazada();
 lista.insertarSinDuplicados(10);
 lista.insertarSinDuplicados(20);
-lista.insertarSinDuplicados(10); // No se inserta porque ya existe
-lista.imprimir(); // Imprime: 10, 20
+lista.insertarSinDuplicados(10);
+lista.imprimir();
  
 
 
